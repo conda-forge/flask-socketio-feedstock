@@ -18,8 +18,6 @@ build:
   preserve_egg_dir: True
   number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
-  entry-points:
-    - run = flask_socketio.cli:run
 
 requirements:
   build:
