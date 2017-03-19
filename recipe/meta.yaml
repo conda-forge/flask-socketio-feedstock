@@ -38,13 +38,13 @@ test:
     - flask_socketio.test_client
 
 about:
-  home: http://github.com/miguelgrinberg/Flask-SocketIO/
+  home: https://github.com/miguelgrinberg/Flask-SocketIO/
   license: MIT
-  # license_file: No MANIFEST.in - see https://github.com/miguelgrinberg/Flask-SocketIO/issues/326
+  license_file: LICENSE
   license_family: MIT
   summary: 'Socket.IO integration for Flask applications'
   doc_url: https://flask-socketio.readthedocs.io/en/latest/
-  dev_url: http://github.com/miguelgrinberg/Flask-SocketIO
+  dev_url: https://github.com/miguelgrinberg/Flask-SocketIO/
 
 extra:
   recipe-maintainers:
