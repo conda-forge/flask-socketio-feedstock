@@ -1,7 +1,7 @@
 About flask-socketio
 ====================
 
-Home: http://github.com/miguelgrinberg/Flask-SocketIO/
+Home: https://github.com/miguelgrinberg/Flask-SocketIO/
 
 Package license: MIT
 
