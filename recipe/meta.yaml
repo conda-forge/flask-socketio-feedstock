@@ -1,8 +1,8 @@
 {%set name = "Flask-SocketIO" %}
-{%set version = "2.7.1" %}
+{%set version = "2.8.5" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "93407798fddd7258fdd1fc7f4c50251d2f7cbcc820194312920dac62748d0e65" %}
+{%set hash_val = "1f4fc467b2b4b94786d51c7c210f2bd05a419e4adc7cbfa4e4218e74a4c96fdd" %}
 {%set build_num = "0" %}
 
 package:
@@ -38,13 +38,13 @@ test:
     - flask_socketio.test_client
 
 about:
-  home: http://github.com/miguelgrinberg/Flask-SocketIO/
+  home: https://github.com/miguelgrinberg/Flask-SocketIO/
   license: MIT
-  # license_file: No MANIFEST.in - see https://github.com/miguelgrinberg/Flask-SocketIO/issues/326
+  license_file: LICENSE
   license_family: MIT
   summary: 'Socket.IO integration for Flask applications'
   doc_url: https://flask-socketio.readthedocs.io/en/latest/
-  dev_url: http://github.com/miguelgrinberg/Flask-SocketIO
+  dev_url: https://github.com/miguelgrinberg/Flask-SocketIO/
 
 extra:
   recipe-maintainers:
