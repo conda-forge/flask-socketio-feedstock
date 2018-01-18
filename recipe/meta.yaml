@@ -11,10 +11,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   preserve_egg_dir: True
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
@@ -27,8 +28,7 @@ requirements:
   run:
     - python
     - flask >=0.9
-    - python-socketio >=1.5.0
-    - python-engineio >=1.0.0
+    - python-socketio >=1.6.1
 
 test:
   imports:
