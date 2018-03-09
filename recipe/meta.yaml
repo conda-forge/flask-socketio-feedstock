@@ -1,8 +1,8 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "2.9.3" %}
+{% set version = "2.9.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "df23f790db8529c543bd0b54165215c342cf6955a4a1f605650e759197a46d59" %}
+{% set hash = "fdf729e9c0a1fc86def4471876accaa5e91bd38838c7ddf97b405008f7b6b7af" %}
 {% set build = 0 %}
 
 package:
@@ -17,7 +17,7 @@ source:
 build:
   noarch: python
   preserve_egg_dir: True
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
