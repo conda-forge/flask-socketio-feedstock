@@ -1,8 +1,8 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "034c36bad808f93efd5b0aeafd740dc314b0a848f17e9ec6c387c74b3f22dfe7" %}
+{% set hash = "972eb14d8269c9a1a619d3b02a5b681fee02ce3a0106e1b0369be42c4f1de999" %}
 
 
 package:
