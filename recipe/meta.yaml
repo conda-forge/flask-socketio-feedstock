@@ -1,8 +1,8 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "3.1.2" %}
+{% set version = "3.3.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "26fbb693f934ebb1c53a0944f11c761ed54897ca7a5b673ce98961072d0694c1" %}
+{% set hash = "77894be955a7944f94343ccb71a5cc3449e059fd5f8c1d17529fa2e92154882e" %}
 
 
 package:
@@ -33,7 +33,6 @@ requirements:
 test:
   imports:
     - flask_socketio
-    - flask_socketio.cli
     - flask_socketio.namespace
     - flask_socketio.test_client
 
