@@ -1,8 +1,8 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "77894be955a7944f94343ccb71a5cc3449e059fd5f8c1d17529fa2e92154882e" %}
+{% set hash = "8d8f9f104db5ddff1b06ba322d8e158881d590144199c993fe26cf53218c7edd" %}
 
 
 package:
@@ -28,7 +28,7 @@ requirements:
   run:
     - python
     - flask >=0.9
-    - python-socketio >=2.1.0
+    - python-socketio >=2.1.0,<4
 
 test:
   imports:
