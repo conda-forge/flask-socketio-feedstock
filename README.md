@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About flask-socketio
 ====================
 
@@ -18,8 +14,15 @@ Summary: Socket.IO integration for Flask applications
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-socketio-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-socketio-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5064&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flask-socketio-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
