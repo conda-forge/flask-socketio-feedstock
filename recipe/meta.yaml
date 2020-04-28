@@ -1,8 +1,6 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "3.3.2" %}
+{% set version = "4.3.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "8d8f9f104db5ddff1b06ba322d8e158881d590144199c993fe26cf53218c7edd" %}
 
 
 package:
@@ -10,25 +8,24 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: 7f9b54ac9cd92e28a657c58f51943d97e76b988840c8795784e7b2bafb13103f
 
 build:
   noarch: python
   preserve_egg_dir: True
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
     - pip
 
   run:
     - python
     - flask >=0.9
-    - python-socketio >=2.1.0,<4
+    - python-socketio >=4.3.0
 
 test:
   imports:
@@ -48,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - synapticarbors
