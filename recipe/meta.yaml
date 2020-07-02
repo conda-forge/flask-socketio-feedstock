@@ -1,5 +1,5 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "4.3.0" %}
+{% set version = "4.3.1" %}
 {% set bundle = "tar.gz" %}
 
 
@@ -9,13 +9,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: 7f9b54ac9cd92e28a657c58f51943d97e76b988840c8795784e7b2bafb13103f
+  sha256: 36c1d5765010d1f4e4f05b4cc9c20c289d9dc70698c88d1addd0afcfedc5b062
 
 build:
   noarch: python
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_file: LICENSE
   license_family: MIT
-  summary: 'Socket.IO integration for Flask applications'
+  summary: Socket.IO integration for Flask applications
   doc_url: https://flask-socketio.readthedocs.io/en/latest/
   dev_url: https://github.com/miguelgrinberg/Flask-SocketIO/
 
