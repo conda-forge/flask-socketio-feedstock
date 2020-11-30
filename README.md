@@ -5,11 +5,13 @@ Home: https://github.com/miguelgrinberg/Flask-SocketIO/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-socketio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Socket.IO integration for Flask applications
 
+Development: https://github.com/miguelgrinberg/Flask-SocketIO/
 
+Documentation: https://flask-socketio.readthedocs.io/en/latest/
 
 Current build status
 ====================
