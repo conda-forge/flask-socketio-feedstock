@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.5
     - pip
 
   run:
-    - python >=2.7
+    - python >=3.5
     - flask >=0.9
-    - python-socketio >=4.3.0,<5.0
+    - python-socketio >=5.0.2
 
 test:
   imports:
