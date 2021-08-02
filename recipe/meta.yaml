@@ -1,5 +1,5 @@
 {% set name = "Flask-SocketIO" %}
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 {% set bundle = "tar.gz" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: b41b9f6fb0d7f3fcadd54c44653307a9b96e985c7da73f92779480248b5b6874
+  sha256: 1efdaacc7a26e94f2b197a80079b1058f6aa644a6094c0a322349e2b9c41f6b1
 
 build:
   noarch: python
