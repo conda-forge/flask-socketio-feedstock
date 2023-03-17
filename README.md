@@ -1,11 +1,11 @@
-About flask-socketio
-====================
+About flask-socketio-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-socketio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/miguelgrinberg/Flask-SocketIO/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-socketio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Socket.IO integration for Flask applications
 
