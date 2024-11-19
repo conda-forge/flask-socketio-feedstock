@@ -1,0 +1,51 @@
+context:
+  version: 5.4.1
+  python_min: "3.7"
+
+package:
+  name: flask-socketio
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/f/flask-socketio/flask_socketio-${{ version }}.tar.gz
+  sha256: 2e9b8864a5be37ca54f6c76a4d06b1ac5e0df61fde12d03afc81ab4057e1eb86
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - pip
+    - setuptools >=61.2
+  run:
+    - python >=${{ python_min }}
+    - flask >=0.9
+    - python-socketio >=5.0.2
+
+tests:
+  - python:
+      imports:
+        - flask_socketio
+        - flask_socketio.namespace
+        - flask_socketio.test_client
+  - script:
+      - python -c "import flask_socketio"
+    requirements:
+      run:
+        - python ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Socket.IO integration for Flask applications
+  homepage: https://github.com/miguelgrinberg/Flask-SocketIO/
+  repository: https://github.com/miguelgrinberg/Flask-SocketIO/
+  documentation: https://flask-socketio.readthedocs.io/en/latest/
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - synapticarbors
