@@ -1,5 +1,5 @@
 context:
-  version: 5.4.1
+  version: 5.5.1
   python_min: "3.7"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-socketio/flask_socketio-${{ version }}.tar.gz
-  sha256: 2e9b8864a5be37ca54f6c76a4d06b1ac5e0df61fde12d03afc81ab4057e1eb86
+  sha256: d946c944a1074ccad8e99485a6f5c79bc5789e3ea4df0bb9c864939586c51ec4
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python =${{ python_min }}
     - pip
     - setuptools >=61.2
   run:
@@ -35,7 +35,7 @@ tests:
       - python -c "import flask_socketio"
     requirements:
       run:
-        - python ${{ python_min }}
+        - python =${{ python_min }}
 
 about:
   license: MIT
@@ -49,3 +49,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - synapticarbors
+    - jan-janssen
