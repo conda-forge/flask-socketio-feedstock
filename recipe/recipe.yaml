@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - flask >=0.9
-    - python-socketio >=5.0.2
+    - python-socketio >=5.12.0
 
 tests:
   - python:
