@@ -1,5 +1,5 @@
 context:
-  version: 5.5.1
+  version: "5.6.0"
   python_min: "3.9"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-socketio/flask_socketio-${{ version }}.tar.gz
-  sha256: d946c944a1074ccad8e99485a6f5c79bc5789e3ea4df0bb9c864939586c51ec4
+  sha256: 42a7bc552013633875ad320e39462323b4f7334594f1658d72b6ffed99940d4c
 
 build:
   number: 0
