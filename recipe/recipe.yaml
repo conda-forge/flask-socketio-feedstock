@@ -1,6 +1,5 @@
 context:
-  version: "5.6.0"
-  python_min: "3.9"
+  version: "5.6.1"
 
 package:
   name: flask-socketio
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-socketio/flask_socketio-${{ version }}.tar.gz
-  sha256: 42a7bc552013633875ad320e39462323b4f7334594f1658d72b6ffed99940d4c
+  sha256: fe5bd995c3ed4da9a98f335d0d830fa1a19d84a64789f6265642a671fdacaeac
 
 build:
   number: 0
@@ -22,8 +21,12 @@ requirements:
     - setuptools >=61.2
   run:
     - python >=${{ python_min }}
+    - blinker
+    - click
     - flask >=2.1.0
+    - jinja2
     - python-socketio >=5.12.0
+    - werkzeug
 
 tests:
   - python:
