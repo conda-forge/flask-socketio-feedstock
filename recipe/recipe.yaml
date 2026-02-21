@@ -1,6 +1,5 @@
 context:
   version: "5.6.1"
-  python_min: "3.9"
 
 package:
   name: flask-socketio
@@ -22,8 +21,12 @@ requirements:
     - setuptools >=61.2
   run:
     - python >=${{ python_min }}
+    - blinker
+    - click
     - flask >=2.1.0
+    - jinja2
     - python-socketio >=5.12.0
+    - werkzeug
 
 tests:
   - python:
