@@ -1,5 +1,5 @@
 context:
-  version: "5.6.1"
+  version: "5.7.0"
 
 package:
   name: flask-socketio
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-socketio/flask_socketio-${{ version }}.tar.gz
-  sha256: fe5bd995c3ed4da9a98f335d0d830fa1a19d84a64789f6265642a671fdacaeac
+  sha256: aa01e50106962808dadc245407c3b6354295b1526e888bd154dc7ff4801a7c88
 
 build:
   number: 0
@@ -35,7 +35,9 @@ tests:
         - flask_socketio.namespace
         - flask_socketio.test_client
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - '*'
 
 about:
   license: MIT
