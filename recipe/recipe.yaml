@@ -35,7 +35,9 @@ tests:
         - flask_socketio.namespace
         - flask_socketio.test_client
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - '*'
 
 about:
   license: MIT
